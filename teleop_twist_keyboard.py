@@ -58,8 +58,8 @@ def vels(speed,turn):
 if __name__=="__main__":
     	settings = termios.tcgetattr(sys.stdin)
 	
-	pub = rospy.Publisher('cmd_vel', Twist)
-	rospy.init_node('teleop_twist_keyboard')
+	pub = rospy.Publisher('jackal_velocity_controller/cmd_vel', Twist)
+	rospy.init_node('jackal_velocity_controller')
 
 	x = 0
 	th = 0
